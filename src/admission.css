@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#loading {  
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: 
+    translate(-50%, -50%);
+    z-index: 999;
+    transition: all 1.0s;
+}
+#loading img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: 
+    translate(-50%, -50%);
+}
+.top{
+    height: 4vh;
+    background-color:rgba(17, 16, 16, 0.911);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: sticky;
+    top:0;
+    color: whitesmoke;
+    font-size: 11px;
+    z-index: 99999999;
+}
+.MidStrip{
+    height: 30vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(forms.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.logo{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #eee;
+  letter-spacing: 2px;
+  position: absolute;
+  left:15%;
+  text-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+}
+.logo img{
+	left: 10%;
+	width: 5%;  
+}
+/* -------------------------------------------------------------------- */
+.TT{
+  color: aliceblue;
+  font-weight: bold;
+  text-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+  font-size: medium;
+  text-decoration: #F2AA4CFF;
+}
+.navigation {
+    position: absolute;
+    top:2%;
+    right: 10%;
+    border-radius: 0.25rem;
+    width:345px;
+    background-color: #F2AA4CFF;
+}
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navigation a {
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 11px;
+    padding-top: 10px;
+    position: relative;
+}
+.navigation a:hover {
+    color: #F2AA4CFF;
+    box-shadow: 0px 0px 10px 2px #000;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F2AA4CFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+/* ---------------------------------------------------------------------------- */
+.FormBox{
+    background: #fff;
+    position: relative;
+    top: -5%;
+    box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+/* ----------------------------------------------------------------------------- */
+.SideBox{
+    background-color: rgba(132, 52, 59, 0.972);
+    padding: 20px 10px;
+}
+.SideBox h2{
+    color: blanchedalmond;
+    margin-top: 20px;
+    font-size: 50px;
+}
+.icon,.Gif
+{
+    text-align: center;
+}
+.icon img{
+    width: 60%;
+    max-width: 70px;
+    padding-top: 12%;
+}
+.Gif img{
+    width: 80%;
+    max-width: 300px;
+    max-height: 120px;
+}
+form {
+    background-color: whitesmoke;
+}
+.FormSTD{
+    background: #F3DB74FF;
+    padding: 20px 10px;
+}
+.FormPRNT{
+    background: #B3C7D6FF;
+    padding: 20px 10px;
+}
+.FormGRDStff{
+    background: #D9B48FFF;
+    padding: 20px 10px;
+}
+.other h4{
+    color: rgb(72, 70, 68);
+    text-align: center;
+}
+input {    
+    margin-left: 1%;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: darkgrey;
+    border-radius: 7px; 
+    outline: 1px dashed transparent;
+    outline-offset: 2px;
+
+    font-size: 1rem;
+    height: 2 rem;
+    margin-top: 0.25rem;
+    order: 2;
+    padding: 0.25rem 0.5rem;
+    width: 100%;
+}
+input[type="file"] {
+    margin-top: 2%;
+    color: blanchedalmond;
+    box-shadow: none;
+    border-color: rgba(132, 52, 59, 0.972);
+    background: rgba(132, 52, 59, 0.972);
+    font-size: 0.75rem;
+    font-weight: bold;
+
+    order: 4;
+    outline: 1px dashed transparent;
+    outline-offset: 2px;
+    text-transform: uppercase;
+    width: 10rem;
+    height: 1.75rem;
+}
+input[type="submit"] {
+    color: blanchedalmond;
+    box-shadow: none;
+    border-color: rgba(132, 52, 59, 0.972);
+    background: rgba(132, 52, 59, 0.972);
+    font-size: 0.75rem;
+    font-weight: bold;
+
+    order: 4;
+    outline: 1px dashed transparent;
+    outline-offset: 2px;
+    text-transform: uppercase;
+    width: 5rem;
+    height: 1.75rem;
+}
+.EnrollBTN
+{
+    padding: 10px;
+    width: 100%;
+}
+.EnrollBTN input[type="submit"]{
+    float: right;
+}
+.row p
+{
+    margin: 5px 0px 5px 0px;
+}
+
+select {
+    color: blanchedalmond;
+    box-shadow: none;
+    border-color: rgba(132, 52, 59, 0.972);
+    background: rgba(132, 52, 59, 0.972);
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 7px;
+
+    order: 4;
+    outline: 1px dashed transparent;
+    outline-offset: 2px;
+    text-transform: uppercase;
+    width: 5rem;
+    height: 1.75rem;
+}
